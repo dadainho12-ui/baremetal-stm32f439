@@ -45,8 +45,8 @@ int main(void)
 	RCC_AHB1ENR |= GPIOBEN;
 
 	// 2. PB0 → General purpose output mode (01)
-	GPIOB_MODE_R &= ~(3U << 0);
-	GPIOB_MODE_R |=  (1U << 0);
+	GPIOB_MODE_R |=  (1U << 0);   // bit 0 → 1
+	GPIOB_MODE_R &= ~(1U << 1);   // bit 1 → 0
 
 	while(1)
 	{
