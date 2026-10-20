@@ -1,0 +1,6 @@
+# CubeIDE workspace files
+.metadata/
+
+# Generated build files
+Debug/
+Release/
